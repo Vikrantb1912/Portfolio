@@ -1,0 +1,153 @@
+
+/* Updated Stylish Dark Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #0f0f0f, #2c2c2c);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+#home h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+#home h2, #home h3 {
+    color: #cccccc;
+    margin: 10px 0;
+}
+#home p {
+    font-size: 1.1rem;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* About Section */
+.about {
+    background-color: #1e1e1e;
+    padding: 60px 30px;
+    border-radius: 10px;
+    margin: 100px auto 40px;
+    width: 85%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 4px solid #4caf50;
+    transition: transform 0.3s ease;
+}
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects {
+    background-color: #191919;
+    padding: 60px 20px;
+}
+.project-item {
+    background-color: #2a2a2a;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 75%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+.project-item h3 {
+    color: #4caf50;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1e1e1e;
+    padding: 60px 30px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 40px auto 100px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.contact a {
+    color: #4caf50;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Button */
+.resume-container .download-btn {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item, .about, .contact {
+        width: 95%;
+        padding: 30px 15px;
+    }
+    #home h1 {
+        font-size: 2rem;
+    }
+}
